@@ -1,6 +1,36 @@
 #include "main.h"
 
 /**
+ * _printint - Function to print an integer to the standard output
+ * @n: Integer to be printed
+ *
+ * Return: The printed integer
+ */
+
+int _printint(int n)
+{
+	unsigned int j;
+	int len = 0;
+
+	if (n < 0)
+	{
+		len = _putchar('-');
+		j = -n;
+	}
+	else
+		j = n;
+
+	if (n / 10)
+	{
+		len += _printint(j / 10);
+	}
+
+	len += _putchar((j % 10) + '0');
+
+	return (len);
+}
+
+/**
  * _printf - Function to handle integer type conversion in printf
  *@format: Pointer to format string
  *
@@ -24,7 +54,7 @@ int _printf(const char *format, ...)
 		{
 			case 'd':
 			case 'i':
-				i += printf("%d", va_arg(myInts, int));
+				i += _printint(va_arg(myInts, int));
 				break;
 		}
 
