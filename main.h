@@ -4,6 +4,8 @@
 #include <stdarg.h> /* va_list */
 #include <stdlib.h> /* malloc, free */
 #include <unistd.h> /* write */
+#include <stddef.h>
+#include <stdio.h>
 
 /**
  * struct flags - struct containing flags to "turn on"
