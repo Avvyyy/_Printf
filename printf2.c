@@ -12,6 +12,7 @@ int _printf(const char *format, ...)
 {
 	unsigned int i = 0;
 	va_list myInts;
+
 	va_start(myInts, format);
 
 	if (format == NULL)
