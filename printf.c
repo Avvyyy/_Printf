@@ -55,7 +55,7 @@ int _printf(const char *format, ...)
 
 	fmt_t ops[] = {
 		{"c", ch},
-		{"s", str},
+		{"s", _strlen},
 		{"d", _int},
 		{"b", _bin},
 		{"i", _int},
