@@ -21,6 +21,13 @@ int print_op(const char *format, fmt_t *print_arr, va_list list)
 			c = 0;
 			b++;
 			a = format[b];
+			if (a == '%') /** Checks for %%**/
+			{
+				count += _putchar('%');
+				b++;
+				a = format[b];
+				continue;
+			{
 			while (print_arr[c].type != NULL &&
 			       a != *(print_arr[c].type))
 				c++;
