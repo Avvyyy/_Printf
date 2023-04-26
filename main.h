@@ -75,7 +75,7 @@ int _hex_l(va_list hexa);
 int _hex_u(va_list hexa);
 int _rot13(va_list rot);
 int _oct(va_list octo);
-int _strlen(char *string)
+int _strlen(char *string);
 int _ui(va_list unsign);
 int ch(va_list character);
 int _hex_str(unsigned int n, unsigned int hex, char alpha);
