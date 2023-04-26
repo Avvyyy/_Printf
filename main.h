@@ -78,5 +78,6 @@ int _oct(va_list octo);
 int _strlen(char *string);
 int _ui(va_list unsign);
 int ch(va_list character);
+int str(va_list string);
 int _hex_str(unsigned int n, unsigned int hex, char alpha);
 #endif /* MAIN_H */
