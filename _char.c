@@ -8,6 +8,7 @@
 int ch(va_list character)
 {
 	int c = va_arg(character, int);
+
 	_putchar(c);
-	return 1;
+	return (1);
 }
